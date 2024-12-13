@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,body {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.for{
+  position: relative;  
+  overflow: hidden;
+
+}
+
+.for::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 0px;
+  background-color: blue; 
+  rotate: -40deg; 
+  width: 7rem;
+  height: 1rem;
+}
